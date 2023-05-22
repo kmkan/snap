@@ -77,6 +77,11 @@ li.menu-item:hover {
     color: var(--black);
 }
 
+li.menu-item:hover .submenu {
+    opacity: 1;
+    transition: opacity 0.05s;
+}
+
 li.menu-item i.arrows {
     position: absolute;
     right: -2rem;
@@ -116,7 +121,8 @@ li.menu-item i.arrows {
 }
 
 .submenu {
-    display: none;
+    opacity: 0;
+    transition: opacity 0.05s 0.2s;
     background-color: white;
     box-shadow: 2px 2px 20px 1px rgba(0, 0, 0, 0.274);
     border-radius: 1rem;
@@ -207,6 +213,22 @@ li.submenu-item:hover {
     li.submenu-item {
         padding: 1rem 0;
     }
+
+    li.menu-item.special {
+        height: 2.5rem;
+        overflow: hidden;
+        margin: 0 auto;
+        transition: height 0.2s;
+    }
+
+    .menu-container {
+        width: 0;
+    }
+
+    li.menu-item.special:hover {
+        height: 100%;
+    }
+
 }
 
 .main {
