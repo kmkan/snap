@@ -252,12 +252,20 @@ p {
     margin: 2rem auto;
     padding: 1rem 2.2rem;
     border-radius: 1.5rem;
+    transition-property: background-color;
+    transition-duration: 0.2s;
+}
+
+.main button:hover {
+    background-color: var(--white);
+    color: var(--black);
+    cursor: pointer;
 }
 
 .logo-container {
     display: flex;
     justify-content: space-evenly;
-    width: min(635px, 100%);
+    width: min(635px, 95%);
 }
 
 .main div img {
