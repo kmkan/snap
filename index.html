@@ -1,39 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- Character Set -->
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Intro section with dropdown navigation</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <!-- CSS Reset -->
+  <link rel="stylesheet" href="css/reset.css">
+  <!-- Custome CSS -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Snap</title>
 </head>
 <body>
-
-  Features
-  Company
-  Careers
-  About
-
-  Login
-  Register
-
-  Make remote work
-
-  Get your team in sync, no matter your location. Streamline processes, 
-  create team rituals, and watch productivity soar.
-
-  Learn more
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+  <div class="overlay"></div>
+  <header class="header">
+    <img src="images/logo.svg" alt="snap-logo">
+    <i class="fa-solid fa-bars bars"></i>
+    <nav>
+      <i class="fa-solid fa-x x"></i>
+      <ul class="menu-list">
+          <li class="menu-item special">Features<i class="fa-solid fa-angle-down arrows"></i>
+            <ul class="submenu">
+              <li class="submenu-item"><i class="fa-sharp fa-regular fa-clipboard" style="color: #f70808;"></i>Todo List</li>
+              <li class="submenu-item"><i class="fa-solid fa-calendar" style="color: #2abfe5;"></i>Calendar</li>
+              <li class="submenu-item"><i class="fa-solid fa-bell" style="color: #e3dd26;"></i>Reminders</li>
+              <li class="submenu-item"><i class="fa-solid fa-clock" style="color: #9645d9;"></i>Planning</li>
+            </ul>
+          </li>
+        <li class="menu-item special">Company <i class="fa-solid fa-angle-down arrows"></i>
+          <ul class="submenu special-submenu">
+            <li class="submenu-item">History</li>
+            <li class="submenu-item">Our Team</li>
+            <li class="submenu-item">Blog</li>
+          </ul>
+        </li>
+        <li class="menu-item">Careers</li>
+        <li class="menu-item">About</li>
+      </ul>
+      <div>
+        <button class="header-button no-border">Login</button>
+        <button class="header-button">Register</button>
+      </div>
+    </nav>
+  </header>
+  <main class="main">
+    <img src="images/image-hero-mobile.png" alt="main-image" class="mobile-image">
+    <img src="images/image-hero-desktop.png" alt="main-image" class="desktop-image">
+    <div class="main-container">
+      <h1><span>Make</span> remote work</h1>
+      <p>Get your team in sync, no matter your location. Streamline processes, 
+      create team rituals, and watch productivity soar.</p>
+      <button>Learn more</button>
+      <div class="logo-container">
+        <img src="images/client-databiz.svg" alt="databiz logo">
+        <img src="images/client-audiophile.svg" alt="databiz logo">
+        <img src="images/client-meet.svg" alt="databiz logo">
+        <img src="images/client-maker.svg" alt="databiz logo">
+      </div>
+    </div>
+  </main>
+  <script src="app.js"></script>
 </body>
 </html>
